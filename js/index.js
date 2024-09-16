@@ -39,4 +39,27 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+
+const links = document.querySelectorAll('nav a');
+const linksArray = Array.from(links);
+linksArray[0].textContent = siteContent['nav']['nav-item-1'];
+linksArray[1].textContent = siteContent['nav']['nav-item-2'];
+linksArray[2].textContent = siteContent['nav']['nav-item-3'];
+linksArray[3].textContent = siteContent['nav']['nav-item-4'];
+linksArray[4].textContent = siteContent['nav']['nav-item-5'];
+linksArray[5].textContent = siteContent['nav']['nav-item-6'];
+
+
+const h1 = document.querySelector('h1');
+h1.innerHTML = 'DOM' + '<br />' + 'Is' + '<br />' + 'Awesome';
+const button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
+const headerImg = document.getElementById('cta-img');
+headerImg.setAttribute('src', siteContent['cta']['img-src']);
+
+// const h1 = document.querySelector('h1');
+// h1.innerText = siteContent['cta']['h1'];
+// h1.style.width = '150px';
+// h1.style.marginRight = '100px';
